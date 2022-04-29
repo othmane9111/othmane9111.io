@@ -671,7 +671,8 @@ body {
 
 @media only screen and (min-width: 300px) and (max-width:500px) {
   body{
-      overflow-x: hidden;
+      overflow-x: hidden ;
+      border: 1px solid red;
   }
   .logo{
       font-size: 1.3rem;
@@ -737,12 +738,17 @@ body {
   }
   .leftsection {
       width: 100%;
+      height: auto;
+      flex-direction: column;
       border-radius: 0;
+      margin: 0 auto;
+  }
+  .lineseparator{
+      transform: rotate(90deg);
   }
   .col1,
   .col2,
   .col3 {
-      padding: 1px 7px;
       font-size: 12px;
       line-height: 10px;
   }
@@ -754,15 +760,29 @@ body {
       font-size: .8rem;
   }
   .secondsection{
-      width: 70%;
+      width: 100%;
+      margin-inline: auto;
   }
-  .secondsection div{
-      font-size: .8rem;
-  }
+ 
   .fullwidth{
       width: 100%;
-      font-size: .7em;
+      padding-left: 0;
+      padding-right: 0;
   }
+  .fillHeight {
+    transform: rotate(179deg);
+    margin-left: 0 ;
+    margin-right: 0;
+}
+.fwdiv{
+    width: 100%;
+    font-size: .7em !important;
+    margin:0;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
   .searchContainer{
       width: 147px;
       height: 36px;
@@ -782,20 +802,54 @@ body {
       width: 10px;
       height: 10px;
   }
+  .content{
+      width: 100%;
+  }
+  .titlecontainer{
+      height: auto;
+      margin-right:0 ;
+      margin-left: 0;
+      width: 100%;
+  }
   .footerbtncontainer {
       width: 176px;
-      height: 37px;
+      height: 57px;
   }
   .footerbtncontainer i{
       font-size: .8em;
       padding-right: .5rem;
+    
+  }
+  .btntext{
+      margin-top: 0;
   }
   .sectionone h3{
       font-size: .9em !important;
+      margin-top: 1rem;
+      margin-left: 1rem;
+      width: 100%;
   }
   .sectionone p,
   .singlepara p{
       font-size: .7em !important;
+  }
+  .Lorem-ipsum-lorem-impum-lorem {
+    width: 100% !important;
+    margin-right: 0;
+    margin-left: 0;
+    text-align: center;
+  }
+  .upertext{
+      border: 1px solid;
+      margin-left: 34%;
+  }
+  .nextline2{
+      margin-left: 0;
+      width:100% 
+     }
+  .flex p{
+      width: 100%;
+      text-align: center;
   }
   .alphabetic{
       letter-spacing: .2em !important;
@@ -803,13 +857,19 @@ body {
   }
   .lastsectioncontainer{
     position: relative;
-    height: 110px;
+    display: flex;
+    flex-direction: column;
+    height: auto;
+  }
+  .lcocopy{
+      margin-bottom: 2rem;
   }
   .footericons{
     left: 50%;
     transform: translateX(-50%);
     bottom: 0;
     width: 50%;
+    margin-top: 3rem;
   }
   .ficons{
     width: 100%;
